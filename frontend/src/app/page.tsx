@@ -167,11 +167,11 @@ export default async function Home() {
               </BlurFade>
               <BlurFade delay={0.25} inView>
                 <p className="text-[15px] text-gray-400">
-                  Step up your game with the Nike. This isn’t just a shoe; it’s
-                  your new teammate, engineered to amplify every aspect of your
-                  performance. If you’re ready to break through your limits and
-                  experience the next level of athletic excellence, you’ve come
-                  to the right place.
+                  Step up your game with the Nike. This isn&apos;t just a shoe;
+                  it&apos;s your new teammate, engineered to amplify every
+                  aspect of your performance. If you&apos;re ready to break
+                  through your limits and experience the next level of athletic
+                  excellence, you’ve come to the right place.
                 </p>
               </BlurFade>
             </div>
