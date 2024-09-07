@@ -1,0 +1,108 @@
+.image-h1 {
+  background: url("../components/image/catagaries-1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+.image-h2 {
+  background: url("../components/image/catagaries-2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+.image-h3 {
+  background: url("../components/image/catagaries-3.jpg");
+  background-size: cover;
+  border-radius: 4px;
+  background-position: center;
+}
+.image-h4 {
+  background: url("../components/image/catagaries-6.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+.image-h1:hover,
+.image-h2:hover,
+.image-h3:hover,
+.image-h4:hover {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -250px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* loader */
+/* From Uiverse.io by mobinkakei */
+.loader {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0),
+    radial-gradient(circle 5px, #19191a 100%, transparent 0);
+  background-repeat: no-repeat;
+  animation: move 4s linear infinite, rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0%,
+  20% {
+    transform: rotate(0deg);
+  }
+  30%,
+  40% {
+    transform: rotate(90deg);
+  }
+  50%,
+  60% {
+    transform: rotate(180deg);
+  }
+  70%,
+  80% {
+    transform: rotate(270deg);
+  }
+  90%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  0%,
+  9% {
+    background-position: -12px -15px, -12px 0px, -12px 15px, 12px -15px,
+      12px 0px, 12px 15px;
+  }
+  10%,
+  25% {
+    background-position: 0px -15px, -12px 0px, -12px 15px, 34px -15px, 12px 0px,
+      12px 15px;
+  }
+  30%,
+  45% {
+    background-position: 0px -34px, -12px -10px, -12px 12px, 34px -15px,
+      12px -10px, 12px 12px;
+  }
+  50%,
+  65% {
+    background-position: 0px -34px, -12px -34px, -12px 12px, 34px -12px,
+      0px -10px, 12px 12px;
+  }
+  70%,
+  85% {
+    background-position: 0px -34px, -12px -34px, 0px 12px, 34px -12px, 0px -10px,
+      34px 12px;
+  }
+  90%,
+  100% {
+    background-position: 0px -34px, -12px -34px, 0px 0px, 34px -12px, 0px 0px,
+      34px 12px;
+  }
+}
