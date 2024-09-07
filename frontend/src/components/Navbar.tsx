@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Image0001 from "./image/VOLLEyY.png";
+import Image0001 from "@/components/image/VolleyY.png";
 import DarkButton from "./ui/darkButton";
 import { useState } from "react";
 import { Button } from "./ui/button";
