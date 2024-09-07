@@ -43,7 +43,7 @@ const Product = () => {
       setError(null);
       try {
         const res = await fetch(
-          `http://localhost:3001/products?page=${currentPage}&limit=30`
+          `https://volleyy-server.vercel.app/products?page=${currentPage}&limit=30`
         );
 
         if (!res.ok) {

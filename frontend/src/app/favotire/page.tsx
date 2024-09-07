@@ -33,12 +33,14 @@ const Favorites = () => {
           ? JSON.parse(favoritesList)
           : [];
         const productRequests = favoriteIds.map((id: string) =>
-          fetch(`http://localhost:3001/products/${id}`).then((res) => {
-            if (!res.ok) {
-              throw new Error(`Failed to fetch product with ID ${id}`);
+          fetch(`https://volleyy-server.vercel.app/products/${id}`).then(
+            (res) => {
+              if (!res.ok) {
+                throw new Error(`Failed to fetch product with ID ${id}`);
+              }
+              return res.json();
             }
-            return res.json();
-          })
+          )
         );
 
         const products = await Promise.all(productRequests);

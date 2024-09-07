@@ -21,7 +21,7 @@ export interface Product {
 
 // Fetch product data on the server
 async function fetchProduct(id: string): Promise<Product> {
-  const res = await fetch(`http://localhost:3001/products/${id}`, {
+  const res = await fetch(`https://volleyy-server.vercel.app/products/${id}`, {
     cache: "force-cache",
   });
 
