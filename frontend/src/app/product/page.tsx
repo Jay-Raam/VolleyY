@@ -88,7 +88,6 @@ const Product = () => {
   };
 
   const handleSaveId = (id: string) => {
-    // Retrieve existing favorites or initialize an empty array
     const existingFavorites = JSON.parse(
       localStorage.getItem("favorites") || "[]"
     );
@@ -158,7 +157,7 @@ const Product = () => {
       <div className="product">
         {loading && (
           <p className="flex justify-center items-center h-auto md:h-[100vh]">
-            <span className="loader mt-18"></span>
+            <span className="loader mt-96"></span>
           </p>
         )}
         {error && (

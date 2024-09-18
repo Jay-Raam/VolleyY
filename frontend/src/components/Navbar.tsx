@@ -14,12 +14,6 @@ import {
 import Link from "next/link";
 
 const Navbar = () => {
-  const [Isopen, setIsOpen] = useState<boolean>(false);
-
-  const HandleOpenLink = () => {
-    setIsOpen(!Isopen);
-  };
-
   return (
     <>
       <nav>
@@ -39,7 +33,7 @@ const Navbar = () => {
           <div className="link-button">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" onClick={HandleOpenLink}>
+                <Button variant="ghost">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -59,19 +53,13 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link href="/product" onClick={HandleOpenLink}>
-                    Product
-                  </Link>
+                  <Link href="/product">Product</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="/favotire" onClick={HandleOpenLink}>
-                    Cart
-                  </Link>
+                  <Link href="/favotire">Cart</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="/cloth" onClick={HandleOpenLink}>
-                    Cloth
-                  </Link>
+                  <Link href="/cloth">Cloth</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

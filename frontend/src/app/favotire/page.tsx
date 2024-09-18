@@ -57,17 +57,17 @@ const Favorites = () => {
 
   return (
     <>
-      <div className="favorites-container max-w-[1200px] mx-auto my-0 p-4">
+      <div className="favorites-container max-w-[1200px] mx-auto my-0 p-4 mt-5">
         {loading ? (
           <p className="flex justify-center items-center h-auto md:h-[100vh]">
-            <span className="loader"></span>
+            <span className="loader mt-60"></span>
           </p>
         ) : favorites.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5">
             {favorites.map((product) => (
               <div
                 key={product._id}
-                className="product-card p-4 border rounded shadow-md"
+                className="product-card p-4 border rounded shadow-md flex justify-center items-center gap-5 flex-col"
               >
                 {/* {product.Images[0] && (
                 <span>

@@ -141,32 +141,32 @@ export default async function Home() {
             />
           </div>
         </div>
-        <div className="reviews flex mt-10 h-auto lg:h-[100vh] justify-center flex-col items-center gap-3">
-          <div className="container flex justify-center max-w-[1200px] mx-auto my-0 gap-3 items-center flex-col lg:flex-row">
-            <div className="relative mt-5 w-full lg:w-1/2">
+        <div className="reviews flex mt-10 justify-center flex-col items-center gap-3">
+          <div className="container flex justify-center max-w-[1200px] mx-auto my-0 gap-3 items-center flex-col">
+            <div className="relative mt-5 w-full">
               <HeroVideoDialog
                 className="dark:hidden block"
                 animationStyle="top-in-bottom-out"
                 videoSrc="https://www-ccv.adobe.io/v1/player/ccv/HxZPyHedIBm/embed?api_key=behance1&bgcolor=%23191919"
-                thumbnailSrc="https://cdn-prod-ccv.adobe.com/HxZPyHedIBm/image/HxZPyHedIBm_poster.jpg?hdnts=st%3D1725633165%7Eexp%3D1725892365%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FHxZPyHedIBm%2Frend%2F*%21%2Fi%2FHxZPyHedIBm%2Frend%2F*%21%2FHxZPyHedIBm%2Frend%2F*%21%2FHxZPyHedIBm%2Fimage%2F*%21%2FHxZPyHedIBm%2Fcaptions%2F*%7Ehmac%3Dab1f4980b755b2c3dca2288e00b223cf7c5cf11f56a742a54125ffe2ec450704"
+                thumbnailSrc="https://mir-s3-cdn-cf.behance.net/project_modules/1400/655c7a207557173.66ea3be5d0d6b.jpg"
                 thumbnailAlt="Hero Video"
               />
               <HeroVideoDialog
                 className="hidden dark:block"
                 animationStyle="top-in-bottom-out"
                 videoSrc="https://www-ccv.adobe.io/v1/player/ccv/HxZPyHedIBm/embed?api_key=behance1&bgcolor=%23191919"
-                thumbnailSrc="https://cdn-prod-ccv.adobe.com/HxZPyHedIBm/image/HxZPyHedIBm_poster.jpg?hdnts=st%3D1725633165%7Eexp%3D1725892365%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FHxZPyHedIBm%2Frend%2F*%21%2Fi%2FHxZPyHedIBm%2Frend%2F*%21%2FHxZPyHedIBm%2Frend%2F*%21%2FHxZPyHedIBm%2Fimage%2F*%21%2FHxZPyHedIBm%2Fcaptions%2F*%7Ehmac%3Dab1f4980b755b2c3dca2288e00b223cf7c5cf11f56a742a54125ffe2ec450704"
+                thumbnailSrc="https://mir-s3-cdn-cf.behance.net/project_modules/1400/655c7a207557173.66ea3be5d0d6b.jpg"
                 thumbnailAlt="Hero Video"
               />
             </div>
-            <div className="client-review w-full lg:w-1/2 flex justify-start items-start gap-5 flex-col">
+            <div className="client-review w-full md:w-1/2 mt-5 flex justify-center items-center gap-5 flex-col">
               <BlurFade delay={0.25} inView>
                 <h1 className="text-[30px] font-bold">
                   Ready to Elevate Your Game?
                 </h1>
               </BlurFade>
               <BlurFade delay={0.25} inView>
-                <p className="text-[15px] text-gray-400">
+                <p className="text-[15px] text-gray-400 text-center">
                   Step up your game with the Nike. This isn&apos;t just a shoe;
                   it&apos;s your new teammate, engineered to amplify every
                   aspect of your performance. If you&apos;re ready to break
@@ -179,29 +179,7 @@ export default async function Home() {
           <MarqueeDemo />
         </div>
 
-        <div className="discount flex justify-center items-center max-w-[1550px] mx-auto my-0 mt-8 flex-wrap lg:flex-nowrap">
-          <Image
-            src={Imagee00006}
-            alt="clients"
-            width={880}
-            height={480}
-            quality={100}
-            className="w-full md:w-[500px] lg:w-[765px] h-auto"
-          />
-          <Image
-            src={Imagee00007}
-            alt="clients"
-            width={878}
-            height={480}
-            quality={100}
-            className="w-full md:w-[500px] lg:w-[765px] h-auto"
-          />
-        </div>
-
         <div className="our-product mt-10">
-          <h1 className="text-center text-[30px] font-bold mb-4">
-            Our Product
-          </h1>
           <div className=" mx-auto my-0 relative pb-5 flex w-full flex-col items-center max-w-[1550px] justify-center overflow-hidden rounded-lg bg-background h-auto md:h-[100vh]">
             <Meteors number={120} />
             <div className="image-produect flex z-50 flex-wrap justify-center items-center gap-10 flex-col">
@@ -290,8 +268,27 @@ export default async function Home() {
           </div>
         </div>
 
+        <div className="discount flex justify-center items-center max-w-[1550px] mx-auto my-0 mt-8 flex-wrap lg:flex-nowrap">
+          <Image
+            src={Imagee00006}
+            alt="clients"
+            width={880}
+            height={480}
+            quality={100}
+            className="w-full lg:w-[765px] h-auto"
+          />
+          <Image
+            src={Imagee00007}
+            alt="clients"
+            width={878}
+            height={480}
+            quality={100}
+            className="w-full lg:w-[765px] h-auto"
+          />
+        </div>
+
         <section
-          className="contact flex justify-center items-center gap-6 flex-col max-w-[1200px] mx-auto my-0 mt-20 mb-3"
+          className="contact flex justify-center items-center gap-6 flex-col max-w-[1200px] mx-auto my-0 mt-20 mb-3 h-auto lg:h-svh"
           id="contact"
         >
           <h2 className="text-center text-3xl">Contact Us</h2>
@@ -322,7 +319,7 @@ export default async function Home() {
         <div className="flex justify-center items-center gap-4 flex-col w-full lg:w-1/3">
           <Link href="/product">Product</Link>
           <Link href="/favotire">Cart</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/cloth">Cloth</Link>
         </div>
         <div className="flex justify-center items-center gap-4 flex-col w-full lg:w-1/3">
           <div className="flex justify-center items-center gap-4">
